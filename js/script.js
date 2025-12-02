@@ -27,7 +27,6 @@ let title = document.querySelector("#Title-Container");
 let scrollTimeout;
 let minScrollHeight;
 let loc = window.location.pathname;
-console.log(loc);
 
 if (loc === "/html/modelli.html" || loc === "/html/modelli_focus.html") {
   minScrollHeight = title.scrollHeight * 2;
