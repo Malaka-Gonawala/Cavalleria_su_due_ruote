@@ -1,11 +1,6 @@
-html {
-    scroll-snap-type: y proximity;
-}
-
 /* Breadcrumb */
 main {
     height: fit-content;
-    scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;

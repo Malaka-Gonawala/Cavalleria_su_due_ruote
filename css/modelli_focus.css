@@ -1,66 +1,61 @@
-html {
-  scroll-snap-type: y proximity;
-}
-
 /* Breadcrumb */
 main {
-  scroll-snap-align: start;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main nav {
-  margin: 20px;
+    margin: 20px;
 }
 
 /* Bike Focus Card */
 .bike-podium {
-  display: flex;
-  justify-content: center;
-  width: 80%;
-  height: 100vh;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
 }
 
 .bike-focus-card {
-  background-color: white;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding: 10px;
-  margin: 10px;
-  box-sizing: border-box;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 .bike-focus-card * {
-  background-color: white;
+    background-color: white;
 }
 .bike-focus-card img {
-  width: 80%;
-  height: auto;
-  object-fit: contain;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
 }
 
 .card-title {
-  color: black;
-  text-align: center;
-  font-size: 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-wrap: wrap;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: wrap;
 }
 
 .btn {
-  margin-top: 10px;
-  height: fit-content;
+    margin-top: 10px;
+    height: fit-content;
 }
 
 .price {
-  padding: 5px;
-  border-radius: 5px;
-  background-color: rgba(172, 255, 47, 0.603);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(172, 255, 47, 0.603);
 }
