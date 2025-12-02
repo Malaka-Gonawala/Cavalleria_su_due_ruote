@@ -25,9 +25,18 @@ window.addEventListener("click", function (e) {
 
 let title = document.querySelector("#Title-Container");
 let scrollTimeout;
+let minScrollHeight;
+let loc = window.location.pathname;
+console.log(loc);
+
+if (loc === "/html/modelli.html" || loc === "/html/modelli_focus.html") {
+  minScrollHeight = title.scrollHeight * 2;
+} else {
+  minScrollHeight = title.scrollHeight;
+}
 
 const fixTitle = () => {
-  if (window.scrollY < 50) {
+  if (window.scrollY < minScrollHeight) {
     clearTimeout(scrollTimeout);
     title.classList.remove("start-scroll");
     title.style.opacity = 1;
