@@ -1,0 +1,80 @@
+/* Disclaimer Page Container */
+#Disclaimer-Page {
+    max-width: 900px;
+    margin: 60px auto 100px auto;
+    padding: 30px;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(159, 159, 159, 0.2);
+    font-family: "Arial", sans-serif;
+    color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Headings */
+#Disclaimer-Page h1,
+#Disclaimer-Page h2,
+#Disclaimer-Page h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#Disclaimer-Page h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Paragraphs */
+#Disclaimer-Page p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* Lists */
+#Disclaimer-Page ul {
+    list-style: disc inside;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+#Disclaimer-Page li {
+    margin-bottom: 10px;
+}
+
+/* Important text */
+#Disclaimer-Page u,
+#Disclaimer-Page strong {
+    color: #d9534f;
+}
+
+/* Accept Button */
+#Disclaimer-Page #Accept-Btn {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+#Disclaimer-Page #Accept-Btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #Disclaimer-Page {
+        padding: 20px;
+        margin: 40px 15px;
+    }
+    #Disclaimer-Page h1 {
+        font-size: 1.6rem;
+    }
+}

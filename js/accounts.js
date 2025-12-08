@@ -7,6 +7,16 @@ const accounts = {
     account2: {
         name: "Stefano",
         email: "stefano@example.it",
-        password: "stefano@123",
+        password: "Stefano@123",
+    },
+    account3: {
+        name: "Nour",
+        email: "nour@example.it",
+        password: "Nour@123",
+    },
+    account4: {
+        name: "Emanuele",
+        email: "emanuele@example.it",
+        password: "Emanuele@123",
     },
 };

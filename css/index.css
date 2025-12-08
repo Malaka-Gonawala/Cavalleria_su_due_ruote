@@ -1,182 +1,266 @@
+/* Disclaimer Modal */
+#Disclaimer-Modal-Container {
+    z-index: 999;
+    background-color: rgba(30, 30, 30, 0.985);
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.disclaimer-opened {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Disclaimer-Modal {
+    box-shadow: 0 5px 15px rgba(159, 159, 159, 0.2);
+    padding: 30px;
+    border-radius: 5px;
+    z-index: 999;
+    position: fixed;
+    display: none;
+    gap: 20px;
+    min-width: 600px;
+    max-width: 40%;
+    max-height: 700px;
+    height: auto;
+}
+
+#Disclaimer-Modal h3,
+h5 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#Disclaimer-Modal p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+#Disclaimer-Modal strong {
+    color: #d9534f;
+}
+
+#Disclaimer-Modal ul {
+    list-style: disc inside;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+#Disclaimer-Modal #Redirect-Disclaimer {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+#Disclaimer-Modal #Redirect-Disclaimer:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+body.disclaimer-opened-body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main */
 #Main.scroll-start {
-  position: relative;
-  top: 129px;
+    position: relative;
+    top: 129px;
 }
 
 /* Motto/Slogan */
 #Slogan-Container {
-  margin-top: 5px;
-  border-radius: 7px;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  border: 0.5px solid #d2d2d2;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 7px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    border: 1px solid #d2d2d2;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #Slogan {
-  width: 30%;
-  display: grid;
+    width: fit-content;
+    display: grid;
 }
 #Slogan h3 {
-  font-size: 30px;
+    font-size: 30px;
 }
 #Middle-Line {
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #Slogan #Hr {
-  background-color: #d2d2d2;
-  height: 2px;
-  width: 320px;
-  margin: 5px;
+    background-color: #d2d2d2;
+    height: 1px;
+    width: 350px;
+    margin: 5px;
+    margin-bottom: 2px;
+}
+#Slogan #Hr2 {
+    background-color: aqua;
+    width: 450px;
 }
 #Part1 {
-  margin: 5px auto 5px 0;
+    margin: 5px auto 5px 0;
 }
 #Part2 {
-  margin: 5px 0 5px auto;
+    margin: 5px 0 5px auto;
 }
 
 /* Background */
 #carouselExampleAutoplaying .carousel-item {
-  height: 101vh;
+    height: 101vh;
 }
 #carouselExampleAutoplaying .carousel-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Modelli CTA */
 #Modelli-Container {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 /* Featured Section */
 #Featured-Section {
-  width: auto;
-  height: fit-content;
-  padding: 20px 30px 20px 30px;
-  margin: 80px auto;
+    width: auto;
+    height: fit-content;
+    padding: 20px 30px 20px 30px;
+    margin: 80px auto;
 }
 #Featured-Section h3 {
-  text-align: start;
-  padding-left: 70px;
-  margin-bottom: 50px;
+    text-align: start;
+    padding-left: 70px;
+    margin-bottom: 50px;
 }
 #Bike-Cards {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  min-width: 440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 440px;
 }
 
 .bike-card {
-  background-color: white;
-  width: 340px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  padding: 10px;
-  margin: 10px;
-  box-sizing: border-box;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+    background-color: white;
+    width: 340px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 .bike-card img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .card-title {
-  color: black;
-  text-align: center;
-  font-size: 1rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-wrap: wrap;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: wrap;
 }
 
 .price {
-  padding: 5px;
-  border-radius: 5px;
-  background-color: rgba(172, 255, 47, 0.603);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(172, 255, 47, 0.603);
 }
 
 /* Perche Noi */
 #Perche-Noi {
-  width: auto;
-  height: fit-content;
-  padding: 20px 30px 20px 30px;
-  margin: 80px 30px;
+    width: auto;
+    height: fit-content;
+    padding: 20px 30px 20px 30px;
+    margin: 80px 30px;
 }
 #Perche-Noi h3 {
-  text-align: start;
-  padding-left: 30px;
-  margin-bottom: 50px;
+    text-align: start;
+    padding-left: 30px;
+    margin-bottom: 50px;
 }
 #Perche-Noi ol li {
-  height: fit-content;
+    height: fit-content;
 }
 
 /* Prenota Test Drive*/
 #Book-Container,
 #Modelli-Container {
-  text-align: center;
-  padding: 40px 20px;
-  border: 0.5px solid #d2d2d2;
-  border-radius: 12px;
-  margin: 50px auto;
-  width: 96.5%;
+    text-align: center;
+    padding: 40px 20px;
+    border: 0.5px solid #d2d2d2;
+    border-radius: 12px;
+    margin: 50px auto;
+    width: 96.5%;
 }
 #Book-Container h2,
 #Modelli-Container h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 #Book-Btn {
-  display: inline-block;
-  padding: 12px 30px;
-  background: #007bff;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 #Book-Btn:hover {
-  background: #005fcc;
+    background: #005fcc;
 }
 
 /* Footer */
 #Footer.scroll-start {
-  position: relative;
-  top: 129px;
+    position: relative;
+    top: 129px;
 }
 
 /* Carousel */
 #carouselExampleAutoplaying #Carousel-Prev {
-  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  opacity: 0.8;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    opacity: 0.8;
 }
 #carouselExampleAutoplaying #Carousel-Prev:hover {
-  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  opacity: 0.9;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    opacity: 0.9;
 }
 
 #carouselExampleAutoplaying #Carousel-Next {
-  background-image: linear-gradient(270deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  opacity: 0.8;
+    background-image: linear-gradient(270deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    opacity: 0.8;
 }
 #carouselExampleAutoplaying #Carousel-Next:hover {
-  background-image: linear-gradient(270deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  opacity: 0.9;
+    background-image: linear-gradient(270deg, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    opacity: 0.9;
 }

@@ -31,6 +31,42 @@
     </head>
 
     <body>
+        <!-- Disclaimer modal -->
+        <section id="Disclaimer-Modal-Container">
+            <div id="Disclaimer-Modal">
+                <h3>Attenzione!</h3>
+                <p>
+                    Questo sito è un <strong>progetto scolastico</strong> creato
+                    esclusivamente a scopo didattico. Qualsiasi azione eseguita
+                    all’interno del sito è
+                    <strong>sotto la tua responsabilità</strong>.
+                </p>
+                <h5>Per motivi di sicurezza:</h5>
+                <ul>
+                    <li>
+                        Non inserire
+                        <strong>email, password o dati personali reali</strong>.
+                    </li>
+                    <li>
+                        Il sito utilizza <strong>localStorage</strong>, quindi
+                        le informazioni rimangono salvate nel tuo dispositivo.
+                    </li>
+                    <li>
+                        I dati non vengono protetti, criptati o inviati a server
+                        esterni.
+                    </li>
+                </ul>
+                <h6>
+                    Per leggere il
+                    <strong>disclaimer completo e dettagliato</strong>, clicca
+                    il pulsante qui sotto.
+                </h6>
+
+                <button class="btn btn-primary" id="Redirect-Disclaimer">
+                    Avvertenza!
+                </button>
+            </div>
+        </section>
         <!-- Header -->
         <header id="Header">
             <!-- Title and Nav Open Btn -->
@@ -72,15 +108,20 @@
                             >Chi Siamo</a
                         >
                     </h4>
+                    <h4>
+                        <a
+                            href="./html/prenota.html"
+                            class="link-light link-offset-2"
+                            >Prenota Test Drive</a
+                        >
+                    </h4>
+                    <br />
                     <button
-                        id="Prenota-Test-Drive"
+                        type="button"
+                        id="Registra-Btn"
                         class="btn btn-primary"
-                        style="margin-bottom: 5px"
                     >
-                        Prenota Test Drive</button
-                    ><br />
-                    <button type="button" class="btn btn-primary">
-                        Accedi
+                        Registra
                     </button>
                 </ul>
             </nav>
@@ -94,6 +135,7 @@
                     <h3 id="Part1">Domini ventorum,</h3>
                     <div id="Middle-Line">
                         <span id="Hr"></span>
+                        <span id="Hr2"></span>
                     </div>
                     <h3 id="Part2">gloria in celeritate iacet.</h3>
                 </div>
@@ -422,8 +464,15 @@ Sfondo di un uomo che guarda la telecamera su una moto KTM"
                 <a href="./html/prenota.html" class="footer-links"
                     >Prenota Test Drive</a
                 >
-                <a href="#" class="footer-links">Accedi</a>
-                <a href="#" class="footer-links">Disclaimer</a>
+                <a
+                    href="./html/registra.html"
+                    class="footer-links"
+                    id="Accedi-Link"
+                    >Registra</a
+                >
+                <a href="./html/disclaimer.html" class="footer-links"
+                    >Avvertenza!</a
+                >
             </section>
 
             <section id="Footer-Social">
@@ -445,6 +494,7 @@ Sfondo di un uomo che guarda la telecamera su una moto KTM"
         </footer>
 
         <!-- JavaScript -->
+        <script src="js/index.js"></script>
         <script src="js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </body>

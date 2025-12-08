@@ -27,7 +27,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         />
         <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/prenota.css" />
+        <link rel="stylesheet" href="../css/prenota_registra_login.css" />
     </head>
     <body>
         <!-- Header -->
@@ -69,18 +69,18 @@
                             >Chi Siamo</a
                         >
                     </h4>
+                    <h4>
+                        <a href="#" class="link-light link-offset-2 underline"
+                            >Prenota Test Drive</a
+                        >
+                    </h4>
+                    <br />
                     <button
+                        type="button"
+                        id="Registra-Btn"
                         class="btn btn-primary"
-                        style="
-                            margin-bottom: 5px;
-                            background-color: #3e9bff;
-                            border-color: #248eff;
-                        "
                     >
-                        Prenota Test Drive</button
-                    ><br />
-                    <button type="button" class="btn btn-primary">
-                        Accedi
+                        Registra
                     </button>
                 </ul>
             </nav>
@@ -108,7 +108,7 @@
         <!-- Main -->
         <main id="Main">
             <section id="Form-Container">
-                <h2>Prenota il tuo test drive ora!</h2>
+                <h2>Prenota un test drive</h2>
                 <br />
                 <form class="row g-3 needs-validation" id="Form" novalidate>
                     <div class="form-floating mb-3">
@@ -129,6 +129,8 @@
                             class="form-control"
                             id="phoneInput"
                             placeholder="000 000 0000"
+                            minlength="10"
+                            maxlength="10"
                             required
                         />
                         <label for="phoneInput">Numero di Telefono</label>
@@ -157,10 +159,14 @@
                                 class="form-control"
                                 id="dateInput"
                                 placeholder="gg/mm/aaaa"
+                                max="2100-12-31"
                                 required
                             />
                             <label for="dateInput">La Data</label>
-                            <div class="invalid-feedback">
+                            <div
+                                class="invalid-feedback"
+                                id="invalid-feedback-date"
+                            >
                                 Inserisci la data
                             </div>
                         </div>
@@ -171,10 +177,15 @@
                                 class="form-control"
                                 id="timeInput"
                                 placeholder="ora:min"
+                                min="09:00"
+                                max="21:00"
                                 required
                             />
                             <label for="timeInput">L'Ora</label>
-                            <div class="invalid-feedback">Inserisci l'ora</div>
+                            <div class="invalid-feedback">
+                                Inserisci un'ora compresa tra le 09:00 e le
+                                21:00.
+                            </div>
                         </div>
                     </div>
 
@@ -183,14 +194,14 @@
                             class="btn btn-primary btn-submit"
                             type="submit"
                         >
-                            Submit form
+                            Prenota
                         </button>
                         <button
                             id="Clear-Form"
                             class="btn btn-secondary btn-clear"
                             type="reset"
                         >
-                            Clear form
+                            Anulla
                         </button>
                     </div>
                 </form>
@@ -214,8 +225,10 @@
                 <a href="#" class="footer-links link-active"
                     >Prenota Test Drive</a
                 >
-                <a href="#" class="footer-links">Accedi</a>
-                <a href="#" class="footer-links">Disclaimer</a>
+                <a href="./registra.html" class="footer-links" id="Accedi-Link"
+                    >Registra</a
+                >
+                <a href="./disclaimer.html" class="footer-links">Avvertenza!</a>
             </section>
 
             <section id="Footer-Social">

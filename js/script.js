@@ -35,7 +35,6 @@ if (
     loc.includes("/html/modelli_focus.html")
 ) {
     minScrollHeight = title.scrollHeight * 2.5;
-    console.log(minScrollHeight);
 } else {
     minScrollHeight = title.scrollHeight;
 }
@@ -72,16 +71,54 @@ const fixTitle = () => {
 
 window.addEventListener("scroll", fixTitle);
 
-// Prenota Test Drive
+// Registra
+let registraBtn = document.querySelector("#Registra-Btn");
+const accediLink = document.querySelector("#Accedi-Link");
 document.addEventListener("DOMContentLoaded", () => {
-    let prenotaBtn = document.querySelector("#Prenota-Test-Drive");
-    if (prenotaBtn) {
-        prenotaBtn.addEventListener("click", () => {
-            if (loc.includes("index.html")) {
-                window.location.href = "./html/prenota.html";
-            } else {
-                window.location.href = "./prenota.html";
-            }
-        });
+    const loggedin = localStorage.getItem("loggedin");
+
+    if (loggedin === "true") {
+        registraBtn.textContent = "Disconnetti";
+        accediLink.style.display = "none";
+    } else {
+        registraBtn.textContent = "Registra";
+        accediLink.style.display = "inline";
     }
+
+    registraBtn.addEventListener("click", () => {
+        const loggedin = localStorage.getItem("loggedin");
+
+        if (loggedin === "true") {
+            registraBtn.textContent = "Disconnetti";
+            accediLink.style.display = "none";
+        } else if (loggedin === "false") {
+            registraBtn.textContent = "Registra";
+            accediLink.style.display = "inline";
+        }
+
+        if (registraBtn.textContent === "Registra" && loggedin === "false") {
+            if (loc.includes("index.html")) {
+                window.location.href = "./html/registra.html";
+            } else {
+                window.location.href = "./registra.html";
+            }
+        } else if (
+            registraBtn.textContent === "Disconnetti" &&
+            loggedin === "true"
+        ) {
+            localStorage.setItem("loggedin", "false");
+            registraBtn.textContent = "Registra";
+            accediLink.style.display = "inline";
+        }
+    });
 });
+
+// async function encoding passwords
+async function hash(text) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(text);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+    return Array.from(new Uint8Array(hashBuffer))
+        .map((b) => b.toString(16).padStart(2, "0"))
+        .join("");
+}

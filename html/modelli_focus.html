@@ -1,143 +1,165 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modello</title>
-    <!-- Icon Scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Modello</title>
+        <!-- Icon Scripts -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
 
-    <!--Favicon Link -->
-    <link
-      rel="shortcut icon"
-      href="../img/logo/Cavalleria_Su_Due_ruote_icon.png"
-      type="image/x-icon"
-    />
+        <!--Favicon Link -->
+        <link
+            rel="shortcut icon"
+            href="../img/logo/Cavalleria_Su_Due_ruote_icon.png"
+            type="image/x-icon"
+        />
 
-    <!-- Css Links -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/modelli_focus.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header id="Header">
-      <!-- Title and Nav Open Btn -->
-      <section id="Title-Container">
-        <div id="Title">
-          <img
-            src="../img/logo/Cavalleria_Su_Due_ruote.jpg"
-            alt="#"
-            id="Logo"
-          />
-          <h3>Cavalleria su Due Ruote</h3>
-        </div>
-        <div id="OpenNav">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </section>
+        <!-- Css Links -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/modelli_focus.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="Header">
+            <!-- Title and Nav Open Btn -->
+            <section id="Title-Container">
+                <div id="Title">
+                    <img
+                        src="../img/logo/Cavalleria_Su_Due_ruote.jpg"
+                        alt="#"
+                        id="Logo"
+                    />
+                    <h3>Cavalleria su Due Ruote</h3>
+                </div>
+                <div id="OpenNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
 
-      <!-- Off Canvas Nav -->
-      <nav id="Nav">
-        <ul>
-          <h4>
-            <a href="../index.html" class="link-light link-offset-2">Home</a>
-          </h4>
-          <h4>
-            <a href="./modelli.html" class="link-light link-offset-2 underline"
-              >Modelli</a
-            >
-          </h4>
-          <h4>
-            <a href="#" class="link-light link-offset-2">Chi Siamo</a>
-          </h4>
-          <button
-            id="Prenota-Test-Drive"
-            class="btn btn-primary"
-            style="margin-bottom: 5px"
-          >
-            Prenota Test Drive</button
-          ><br />
-          <button type="button" class="btn btn-primary">Accedi</button>
-        </ul>
-      </nav>
-    </header>
-    <!-- Main -->
-    <br />
-    <nav
-      style="
-        --bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%228%22 height=%228%22%3E%3Cpath d=%22M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z%22 fill=%22%236c757d%22/%3E%3C/svg%3E&quot;);
-        margin: 20px;
-      "
-      aria-label="breadcrumb"
-    >
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="../index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item" aria-current="page">
-          <a href="./modelli.html">Modelli</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">Modelli</li>
-      </ol>
-    </nav>
+            <!-- Off Canvas Nav -->
+            <nav id="Nav">
+                <ul>
+                    <h4>
+                        <a href="../index.html" class="link-light link-offset-2"
+                            >Home</a
+                        >
+                    </h4>
+                    <h4>
+                        <a
+                            href="./modelli.html"
+                            class="link-light link-offset-2 underline"
+                            >Modelli</a
+                        >
+                    </h4>
+                    <h4>
+                        <a href="#" class="link-light link-offset-2"
+                            >Chi Siamo</a
+                        >
+                    </h4>
+                    <h4>
+                        <a
+                            href="./prenota.html"
+                            class="link-light link-offset-2"
+                            >Prenota Test Drive</a
+                        >
+                    </h4>
+                    <br />
+                    <button
+                        type="button"
+                        id="Registra-Btn"
+                        class="btn btn-primary"
+                    >
+                        Registra
+                    </button>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main -->
+        <br />
+        <nav
+            style="
+                --bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%228%22 height=%228%22%3E%3Cpath d=%22M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z%22 fill=%22%236c757d%22/%3E%3C/svg%3E&quot;);
+                margin: 20px;
+            "
+            aria-label="breadcrumb"
+        >
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item" aria-current="page">
+                    <a href="./modelli.html">Modelli</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    Modelli
+                </li>
+            </ol>
+        </nav>
 
-    <main>
-      <section class="bike-podium"></section>
-    </main>
+        <main>
+            <section class="bike-podium"></section>
+        </main>
 
-    <!-- Footer -->
-    <footer>
-      <section id="Footer-Info">
-        <p>
-          Questo sito è un progetto scolastico realizzato a scopo informativo.
-        </p>
-        <p>Cavalleria Su Due Ruote</p>
-      </section>
+        <!-- Footer -->
+        <footer>
+            <section id="Footer-Info">
+                <p>
+                    Questo sito è un progetto scolastico realizzato a scopo
+                    informativo.
+                </p>
+                <p>Cavalleria Su Due Ruote</p>
+            </section>
 
-      <section id="Footer-Links">
-        <a href="../index.html" class="footer-links underline">Home</a>
-        <a href="./modelli.html" class="footer-links link-active">Modelli</a>
-        <a href="#" class="footer-links">Chi Siamo</a>
-        <a href="./prenota.html" class="footer-links">Prenota Test Drive</a>
-        <a href="#" class="footer-links">Accedi</a>
-        <a href="#" class="footer-links">Disclaimer</a>
-      </section>
+            <section id="Footer-Links">
+                <a href="../index.html" class="footer-links underline">Home</a>
+                <a href="./modelli.html" class="footer-links link-active"
+                    >Modelli</a
+                >
+                <a href="#" class="footer-links">Chi Siamo</a>
+                <a href="./prenota.html" class="footer-links"
+                    >Prenota Test Drive</a
+                >
+                <a href="./registra.html" class="footer-links" id="Accedi-Link"
+                    >Registra</a
+                >
+                <a href="./disclaimer.html" class="footer-links">Avvertenza!</a>
+            </section>
 
-      <section id="Footer-Social">
-        <a href="javascript:void(0)" class="footer-social"
-          ><ion-icon name="logo-instagram"></ion-icon
-        ></a>
-        <a href="javascript:void(0)" class="footer-social"
-          ><ion-icon name="logo-facebook"></ion-icon
-        ></a>
-        <a href="javascript:void(0)" class="footer-social"
-          ><ion-icon name="logo-youtube"></ion-icon
-        ></a>
-      </section>
+            <section id="Footer-Social">
+                <a href="javascript:void(0)" class="footer-social"
+                    ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+                <a href="javascript:void(0)" class="footer-social"
+                    ><ion-icon name="logo-facebook"></ion-icon
+                ></a>
+                <a href="javascript:void(0)" class="footer-social"
+                    ><ion-icon name="logo-youtube"></ion-icon
+                ></a>
+            </section>
 
-      <section id="Footer-Credits">
-        <p>Realizzato da: Malaka, Stefano, Nour, Emanuele</p>
-        <p>© Cavalleria Su Due Ruote – Tutti i diritti riservati.</p>
-      </section>
-    </footer>
+            <section id="Footer-Credits">
+                <p>Realizzato da: Malaka, Stefano, Nour, Emanuele</p>
+                <p>© Cavalleria Su Due Ruote – Tutti i diritti riservati.</p>
+            </section>
+        </footer>
 
-    <!-- Javascript -->
-    <script src="../js/script.js"></script>
-    <script src="../js/moto_oggetto.js"></script>
-    <script src="../js/modello_focus.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+        <!-- Javascript -->
+        <script src="../js/script.js"></script>
+        <script src="../js/moto_oggetto.js"></script>
+        <script src="../js/modello_focus.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

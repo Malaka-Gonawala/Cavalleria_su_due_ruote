@@ -1,3 +1,6 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 html {
     font-size: 20px;
     height: fit-content;
@@ -28,7 +31,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 5px;
     width: 100%;
     border-radius: 7px;
-    height: 110px;
+    height: 90px;
     display: flex;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.906);
@@ -125,6 +128,10 @@ nav ul a {
 }
 nav ul a.underline {
     text-decoration: underline;
+}
+
+nav .btn {
+    width: 250px;
 }
 
 /* Bread crumbs*/

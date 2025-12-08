@@ -10,7 +10,7 @@ const timeInput = document.querySelector("#timeInput");
 
 const date = new Date();
 
-const dayToday = String(date.getDay()).padStart(2, "0");
+const dayToday = String(date.getDate()).padStart(2, "0");
 const monthToday = String(date.getMonth() + 1).padStart(2, "0");
 const yearToday = String(date.getFullYear());
 const today = `${yearToday}-${monthToday}-${dayToday}`;
@@ -21,7 +21,6 @@ const endTime = "21:00";
     "use strict";
 
     // Bootstrap validation setup
-
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         form.classList.add("was-validated");
@@ -108,6 +107,9 @@ const endTime = "21:00";
     if (!selectedBike) choose.selected = true;
 })();
 
+let invalidDate = document.querySelector("#invalid-feedback-date");
+invalidDate.textContent = `Inserisci una data successiva o uguale a ${dayToday}/${monthToday}/${yearToday}.`;
+dateInput.setAttribute("min", today);
 form.addEventListener("submit", () => {
     if (
         nameInput.value !== "" &&
@@ -121,9 +123,17 @@ form.addEventListener("submit", () => {
             nameInput.value.charAt(0).toUpperCase() +
             nameInput.value.slice(1).toLowerCase();
 
+        const un = localStorage.getItem("name");
+        const loggedin = localStorage.getItem("loggedin");
+        console.log(un, loggedin);
+        let matched = false;
         for (const account in accounts) {
-            const ac = accounts[account];
-            if (nameFormatted === ac.name) {
+            a = accounts[account];
+            if (
+                (nameFormatted === un && loggedin === "true") ||
+                nameFormatted === a.name
+            ) {
+                matched = true;
                 formContainer.innerHTML = "";
                 form.classList.remove("was-validated");
                 inputs.forEach((input) =>
@@ -137,15 +147,16 @@ form.addEventListener("submit", () => {
                                             <a href='prenota.html'>Effettua un’altra prenotazione</a>
                                            </div>`;
 
-                nameInput.value = "";
-                tel.value = "";
-                select.value = "";
-                dateInput.value = "";
-                timeInput.value = "";
-            } else {
-                console.log("Sign up");
-                continue;
+                form.reset();
+                break;
+            } else if (nameFormatted === un && loggedin === "false") {
+                window.location.href = "./login.html";
+                return;
             }
+        }
+
+        if (!matched) {
+            window.location.href = "./registra.html";
         }
     }
 });
