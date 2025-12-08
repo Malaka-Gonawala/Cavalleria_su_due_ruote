@@ -1,0 +1,148 @@
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 16px;
+        height: fit-content;
+        width: 100vw;
+        overflow-x: hidden;
+        font-family: sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    /* Disclaimer Modal */
+    #Disclaimer-Modal-Container {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    #Disclaimer-Modal {
+        padding: 30px;
+        border-radius: 5px;
+        z-index: 999;
+        position: fixed;
+        display: none;
+        gap: 20px;
+        width: 400px;
+        min-width: 400px;
+        max-width: 400%;
+        max-height: 800px;
+        height: auto;
+    }
+    body.disclaimer-opened-body {
+        height: 120vh;
+        overflow: hidden;
+    }
+
+    /* Scrollbar */
+    body::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: rgba(100, 100, 100, 0.6);
+        border-radius: 2px;
+    }
+
+    /* Nav */
+    #Title {
+        width: 70px;
+        align-items: center;
+        display: flex;
+        gap: 5px;
+    }
+    #Title-Container #Title h3 {
+        display: none;
+    }
+
+    #Logo {
+        width: 100%;
+        height: fit-content;
+        border-radius: 100%;
+        border: 0.5px solid #d2d2d2;
+    }
+
+    #OpenNav.active {
+        margin-right: 220px;
+    }
+
+    #Nav {
+        width: 307.5px;
+        height: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 5;
+        padding-top: 30px;
+    }
+
+    nav .btn {
+        width: 170px;
+    }
+
+    /* Motto/Slogan */
+    #Slogan h3 {
+        font-size: 25px;
+    }
+    #Slogan #Hr {
+        background-color: #d2d2d2;
+        height: 1px;
+        width: 250px;
+        margin: 5px;
+        margin-bottom: 2px;
+    }
+    #Slogan #Hr2 {
+        width: 400px;
+    }
+    /* Featured Section */
+    #Featured-Section {
+        width: auto;
+        height: fit-content;
+        padding: 20px 30px 20px 30px;
+        margin: 15px auto;
+    }
+
+    #Featured-Section h3 {
+        text-align: start;
+        padding-left: 70px;
+        margin-bottom: 0;
+    }
+
+    .bike-card {
+        background-color: white;
+        width: 340px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    /* Perche Noi */
+    #Perche-Noi {
+        width: auto;
+        height: fit-content;
+        padding: 20px 15px;
+        margin: 15px 5px;
+    }
+    #Perche-Noi h3 {
+        text-align: start;
+        padding-left: 30px;
+        margin-bottom: 25px;
+    }
+    #Perche-Noi ol li {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

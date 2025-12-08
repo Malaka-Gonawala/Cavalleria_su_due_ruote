@@ -25,9 +25,7 @@
     position: fixed;
     display: none;
     gap: 20px;
-    min-width: 600px;
-    max-width: 40%;
-    max-height: 700px;
+    width: 40%;
     height: auto;
 }
 
@@ -89,9 +87,8 @@ body.disclaimer-opened-body {
     width: 100%;
     display: grid;
     place-items: center;
-    border: 1px solid #d2d2d2;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border: 0.5px solid #d2d2d2;
+    padding: 10px auto;
 }
 #Slogan {
     width: fit-content;
@@ -114,7 +111,6 @@ body.disclaimer-opened-body {
     margin-bottom: 2px;
 }
 #Slogan #Hr2 {
-    background-color: aqua;
     width: 450px;
 }
 #Part1 {
@@ -156,7 +152,6 @@ body.disclaimer-opened-body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    min-width: 440px;
 }
 
 .bike-card {
@@ -199,7 +194,7 @@ body.disclaimer-opened-body {
 #Perche-Noi {
     width: auto;
     height: fit-content;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px;
     margin: 80px 30px;
 }
 #Perche-Noi h3 {
@@ -209,6 +204,9 @@ body.disclaimer-opened-body {
 }
 #Perche-Noi ol li {
     height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Prenota Test Drive*/
