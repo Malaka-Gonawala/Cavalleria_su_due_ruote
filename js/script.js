@@ -98,9 +98,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (registraBtn.textContent === "Registra" && loggedin === "false") {
             if (loc.includes("index.html")) {
-                window.location.href = "./html/registra.html";
+                window.location.href = "html/registra.html";
             } else {
-                window.location.href = "./registra.html";
+                window.location.href = "registra.html";
             }
         } else if (
             registraBtn.textContent === "Disconnetti" &&
