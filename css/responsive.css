@@ -68,7 +68,7 @@
     }
 
     #Nav {
-        width: 307.5px;
+        width: 285px;
         height: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
@@ -77,6 +77,10 @@
         right: 0;
         z-index: 5;
         padding-top: 30px;
+    }
+
+    nav ul {
+        padding-left: 20px;
     }
 
     nav .btn {
@@ -101,7 +105,7 @@
     #Featured-Section {
         width: auto;
         height: fit-content;
-        padding: 20px 30px 20px 30px;
+        padding: 20px 10px;
         margin: 15px auto;
     }
 
@@ -144,5 +148,80 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    /* Nav */
+    #Nav {
+        width: 275px;
+        height: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 5;
+        padding-top: 30px;
+    }
+    #OpenNav.active {
+        margin-right: 220px;
+    }
+
+    nav ul {
+        padding-left: 15px;
+    }
+
+    /* Motto/Slogan */
+    #Slogan {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Slogan #Hr {
+        background-color: #d2d2d2;
+        height: 1px;
+        width: 200px;
+        margin: 5px;
+        margin-bottom: 2px;
+    }
+    #Slogan #Hr2 {
+        width: 220px;
+    }
+
+    #Part1 {
+        margin: 5px 0;
+    }
+    #Part2 {
+        margin: 5px 0;
+    }
+
+    /* Featured Section */
+    #Featured-Section {
+        padding: 20px 0;
+    }
+    .bike-card {
+        background-color: white;
+        width: 340px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    /* Perche Noi */
+    #Perche-Noi {
+        width: auto;
+        height: fit-content;
+        padding: 20px 0;
+        margin: 15px 5px;
     }
 }
