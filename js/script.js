@@ -85,32 +85,37 @@ document.addEventListener("DOMContentLoaded", () => {
         accediLink.style.display = "inline";
     }
 
-    const path = window.location.pathname;
-    registraBtn.addEventListener("click", () => {
-        const loggedin = localStorage.getItem("loggedin");
+    document.addEventListener("DOMContentLoaded", () => {
+        const path = window.location.pathname;
+        registraBtn.addEventListener("click", () => {
+            const loggedin = localStorage.getItem("loggedin");
 
-        if (loggedin === "true") {
-            registraBtn.textContent = "Disconnetti";
-            accediLink.style.display = "none";
-        } else if (loggedin === "false") {
-            registraBtn.textContent = "Registra";
-            accediLink.style.display = "inline";
-        }
-
-        if (registraBtn.textContent === "Registra" && loggedin === "false") {
-            if (path.endsWith("/") || path.endsWith("/index.html")) {
-                window.location.href = "./html/registra.html";
-            } else {
-                window.location.href = "../html/registra.html";
+            if (loggedin === "true") {
+                registraBtn.textContent = "Disconnetti";
+                accediLink.style.display = "none";
+            } else if (loggedin === "false") {
+                registraBtn.textContent = "Registra";
+                accediLink.style.display = "inline";
             }
-        } else if (
-            registraBtn.textContent === "Disconnetti" &&
-            loggedin === "true"
-        ) {
-            localStorage.setItem("loggedin", "false");
-            registraBtn.textContent = "Registra";
-            accediLink.style.display = "inline";
-        }
+
+            if (
+                registraBtn.textContent === "Registra" &&
+                loggedin === "false"
+            ) {
+                if (path.endsWith("/") || path.endsWith("/index.html")) {
+                    window.location.href = "./html/registra.html";
+                } else {
+                    window.location.href = "../html/registra.html";
+                }
+            } else if (
+                registraBtn.textContent === "Disconnetti" &&
+                loggedin === "true"
+            ) {
+                localStorage.setItem("loggedin", "false");
+                registraBtn.textContent = "Registra";
+                accediLink.style.display = "inline";
+            }
+        });
     });
 });
 
