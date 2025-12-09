@@ -5,6 +5,8 @@ let currentBrand = null;
 let currentCategory = null;
 
 function loadBrands() {
+    container.className = "bike-grid brands";
+
     container.innerHTML = "";
     container.style.width = "70%";
     container.style.height = "auto";
@@ -36,6 +38,8 @@ function loadBrands() {
 }
 
 function loadCategories(b) {
+    container.className = "bike-grid categories";
+
     choose.textContent = "Scegli categoria";
     container.innerHTML = "";
     container.style.width = "100%";
@@ -75,6 +79,8 @@ function loadCategories(b) {
 }
 
 function loadBikes(c) {
+    container.className = "bike-grid bikes";
+
     choose.textContent = "\n";
     container.innerHTML = "";
     container.style.width = "100%";

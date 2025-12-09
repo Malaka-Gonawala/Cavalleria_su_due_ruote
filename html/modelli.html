@@ -28,6 +28,13 @@
         />
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/modelli.css" />
+
+        <!-- Responsive Css Links-->
+        <link rel="stylesheet" href="../css/responsive/style_responsive.css" />
+        <link
+            rel="stylesheet"
+            href="../css/responsive/modelli_responsive.css"
+        />
     </head>
     <body>
         <!-- Header -->
@@ -91,9 +98,9 @@
         <!-- Main -->
         <br />
         <nav
+            id="Breadcrumb-Nav"
             style="
                 --bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%228%22 height=%228%22%3E%3Cpath d=%22M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z%22 fill=%22%236c757d%22/%3E%3C/svg%3E&quot;);
-                margin: 20px;
             "
             aria-label="breadcrumb"
         >
@@ -106,12 +113,12 @@
                 </li>
             </ol>
         </nav>
-        <main>
+        <main id="Main">
             <h2 id="choose">Scegli Marca</h2>
             <section class="bike-grid"></section>
         </main>
         <!-- Footer -->
-        <footer>
+        <footer id="Footer">
             <section id="Footer-Info">
                 <p>
                     Questo sito è un progetto scolastico realizzato a scopo

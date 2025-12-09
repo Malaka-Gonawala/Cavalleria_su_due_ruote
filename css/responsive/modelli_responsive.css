@@ -1,0 +1,35 @@
+@media only screen and (max-width: 1425px) {
+    .bike-grid.bikes {
+        display: grid;
+    }
+}
+@media only screen and (max-width: 1176px) {
+    main {
+        height: 160vh;
+    }
+    .bike-grid.categories {
+        display: grid;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+    main h2 {
+        font-size: 2rem;
+    }
+    /* Bike Grid */
+    .bike-grid {
+        gap: 15px;
+    }
+
+    .brand-card,
+    .category-card,
+    .bike-card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .bike-card {
+        width: 340px;
+        height: 450px;
+    }
+}

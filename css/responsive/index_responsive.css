@@ -1,0 +1,150 @@
+@media only screen and (max-width: 1500px) {
+    /* Disclaimer Modal */
+    #Disclaimer-Modal {
+        gap: 10px;
+        width: 850px;
+        font-size: 0.1rem;
+    }
+
+    #Disclaimer-Modal ul li {
+        font-size: 0.9rem;
+    }
+
+    .bike-card {
+        width: 370px;
+        margin: 5px;
+    }
+
+    #Brabus {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    #Brabus {
+        display: inline-flex;
+    }
+
+    .bike-card {
+        width: 370px;
+        margin: 5px;
+    }
+
+    #Perche-Noi {
+        padding: 20px 15px;
+        margin: 20px 15px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    /* Disclaimer Modal */
+    #Disclaimer-Modal {
+        gap: 10px;
+        width: 600px;
+        font-size: 0.8rem;
+    }
+
+    /* Featured Section */
+    #Featured-Section {
+        padding: 20px 15px;
+        margin: 15px auto;
+    }
+    #Featured-Section h3 {
+        margin-bottom: 0;
+    }
+
+    .bike-card {
+        margin: 5px;
+    }
+
+    /* Perche Noi */
+    #Perche-Noi {
+        padding: 20px 15px;
+        margin: 15px 5px;
+    }
+    #Perche-Noi h3 {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    /* Disclaimer Modal */
+    #Disclaimer-Modal-Container {
+        width: 100vw;
+        height: 100vh;
+    }
+    #Disclaimer-Modal {
+        gap: 10px;
+        width: min-content;
+        width: 370px;
+        font-size: 0.7rem;
+        padding: 15px;
+    }
+    #Disclaimer-Modal ul li {
+        font-size: 0.8rem;
+    }
+
+    /* Motto/Slogan */
+    #Slogan h3 {
+        font-size: 25px;
+    }
+    #Slogan #Hr {
+        width: 220px;
+    }
+    #Slogan #Hr2 {
+        width: 350px;
+    }
+
+    /* Featured Section */
+    #Featured-Section {
+        padding: 20px 10px;
+        margin: 15px auto;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #Disclaimer-Modal-Container {
+        width: 100vw;
+        height: 100vh;
+    }
+    #Disclaimer-Modal {
+        gap: 10px;
+        width: 300px;
+        font-size: 0.5rem;
+        padding: 10px;
+    }
+    #Disclaimer-Modal ul li {
+        font-size: 0.8rem;
+    }
+
+    /* Motto/Slogan */
+    #Slogan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Slogan #Hr {
+        width: 200px;
+    }
+    #Slogan #Hr2 {
+        width: 220px;
+    }
+
+    #Part1 {
+        margin: 5px 0;
+    }
+    #Part2 {
+        margin: 5px 0;
+    }
+
+    /* Featured Section */
+    #Featured-Section {
+        padding: 20px 0;
+    }
+
+    /* Perche Noi */
+    #Perche-Noi {
+        padding: 20px 0;
+        margin: 15px 5px;
+    }
+}

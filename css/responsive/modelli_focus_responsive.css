@@ -1,0 +1,39 @@
+@media only screen and (max-width: 450px) {
+    main {
+        width: 100%;
+        height: fit-content;
+    }
+
+    /* Bike Focus Card */
+    .bike-podium {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+    }
+
+    .bike-focus-card {
+        width: 100%;
+        margin: 0 7px;
+    }
+
+    .bike-focus-card img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    /* Bike Focus Card */
+    .bike-podium {
+        width: 99%;
+    }
+
+    .bike-focus-card {
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .bike-focus-card a {
+        font-size: 0.9rem;
+    }
+}

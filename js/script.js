@@ -27,17 +27,8 @@ let title = document.querySelector("#Title-Container");
 let main = document.querySelector("#Main");
 let footer = document.querySelector("#Footer");
 let scrollTimeout;
-let minScrollHeight;
+let minScrollHeight = title.scrollHeight;
 let loc = window.location.href;
-
-if (
-    loc.includes("/html/modelli.html") ||
-    loc.includes("/html/modelli_focus.html")
-) {
-    minScrollHeight = title.scrollHeight * 2.5;
-} else {
-    minScrollHeight = title.scrollHeight;
-}
 
 const fixTitle = () => {
     if (window.scrollY < minScrollHeight) {

@@ -5,7 +5,8 @@ main {
     flex-direction: column;
     align-items: center;
 }
-main nav {
+
+#Breadcrumb-Nav {
     margin: 20px;
 }
 
@@ -37,12 +38,30 @@ main nav {
     cursor: pointer;
 }
 .brand-card {
-    width: 300px;
+    min-width: 300px;
 }
 
 .bike-card {
     width: 350px;
     height: 600px;
+}
+
+.bike-grid {
+    gap: 15px;
+    width: 100%;
+}
+
+.bike-grid.brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bike-grid.categories,
+.bike-grid.bikes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .brand-card img,

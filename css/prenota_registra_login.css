@@ -6,15 +6,6 @@ main {
     align-items: center;
 }
 
-#Main.scroll-start {
-    position: relative;
-    top: 129px;
-}
-#Footer.scroll-start {
-    position: relative;
-    top: 129px;
-}
-
 #Form-Container {
     width: 60%;
     height: fit-content;
