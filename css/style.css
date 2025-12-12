@@ -131,6 +131,7 @@ nav ul a.underline {
 }
 
 nav .btn {
+    margin-top: 10px;
     width: 250px;
 }
 
@@ -233,7 +234,7 @@ footer a {
 
 #Footer-Credits {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 0.65rem;
     opacity: 0.8;
 }
 

@@ -1,18 +1,36 @@
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 3000px) {
     /* Disclaimer Modal */
     #Disclaimer-Modal {
         gap: 10px;
         width: 850px;
-        font-size: 0.1rem;
-    }
-
-    #Disclaimer-Modal ul li {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .bike-card {
-        width: 370px;
-        margin: 5px;
+        width: 500px;
+        height: 700px;
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 2144px) {
+    .bike-card {
+        width: 400px;
+        height: 600px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 1740px) {
+    .bike-card {
+        width: 340px;
+        height: 500px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #Disclaimer-Modal ul li {
+        font-size: 0.9rem;
     }
 
     #Brabus {
@@ -41,7 +59,7 @@
     #Disclaimer-Modal {
         gap: 10px;
         width: 600px;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     /* Featured Section */
@@ -77,11 +95,11 @@
         gap: 10px;
         width: min-content;
         width: 370px;
-        font-size: 0.7rem;
+        font-size: 1rem;
         padding: 15px;
     }
     #Disclaimer-Modal ul li {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     /* Motto/Slogan */
@@ -110,11 +128,11 @@
     #Disclaimer-Modal {
         gap: 10px;
         width: 300px;
-        font-size: 0.5rem;
+        font-size: 1rem;
         padding: 10px;
     }
     #Disclaimer-Modal ul li {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     /* Motto/Slogan */

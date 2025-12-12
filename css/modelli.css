@@ -52,6 +52,7 @@ main {
 }
 
 .bike-grid.brands {
+    width: 995px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -83,11 +84,6 @@ main {
 
 .card-link {
     font-size: 0.9rem;
-}
-
-.btn {
-    margin-top: 10px;
-    height: fit-content;
 }
 
 .price {

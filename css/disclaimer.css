@@ -1,9 +1,15 @@
+main {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
 /* Disclaimer Page Container */
 #Disclaimer-Page {
-    max-width: 900px;
-    margin: 60px auto 100px auto;
-    padding: 30px;
-    /* background-color: #f9f9f9; */
+    max-width: 1000px;
+    margin: 2rem;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(159, 159, 159, 0.2);
     font-family: "Arial", sans-serif;
@@ -71,8 +77,9 @@
 /* Responsive */
 @media (max-width: 768px) {
     #Disclaimer-Page {
+        width: auto;
         padding: 20px;
-        margin: 40px 15px;
+        margin: 40px 25px;
     }
     #Disclaimer-Page h1 {
         font-size: 1.6rem;

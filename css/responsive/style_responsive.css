@@ -1,6 +1,39 @@
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 2690px) {
+    html {
+        font-size: 25px;
+    }
+
+    #Nav {
+        width: 650px;
+    }
+    #OpenNav.active {
+        margin-right: 220px;
+    }
+
+    nav .btn {
+        width: 320px;
+    }
+}
+@media only screen and (max-width: 1912px) {
     html {
         font-size: 22px;
+    }
+
+    #Nav {
+        width: 550px;
+    }
+    #OpenNav.active {
+        margin-right: 250px;
+    }
+
+    nav .btn {
+        width: 270px;
+    }
+}
+
+@media only screen and (max-width: 1740px) {
+    html {
+        font-size: 20px;
     }
 
     /* Nav */
@@ -29,7 +62,7 @@
 
 @media only screen and (max-width: 1000px) {
     html {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     /* Nav */
@@ -80,7 +113,7 @@
 
 @media only screen and (max-width: 450px) {
     html {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     /* Nav */

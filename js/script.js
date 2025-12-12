@@ -1,5 +1,6 @@
-let btnOpenNav = document.querySelector("#OpenNav");
-let nav = document.querySelector("#Nav");
+const btnOpenNav = document.querySelector("#OpenNav");
+const nav = document.querySelector("#Nav");
+const navUl = document.querySelector("#Nav-Ul");
 let navOpened = false;
 
 function toggleNav() {
@@ -68,15 +69,18 @@ if (localStorage.getItem("loggedin") === null) {
 }
 let registraBtn = document.querySelector("#Registra-Btn");
 const accediLink = document.querySelector("#Accedi-Link");
+let eliminaAccountBtn = null;
 document.addEventListener("DOMContentLoaded", () => {
     const loggedin = localStorage.getItem("loggedin");
 
     if (loggedin === "true") {
         registraBtn.textContent = "Disconnetti";
         accediLink.style.display = "none";
+        eliminaBtn();
     } else {
         registraBtn.textContent = "Registra";
         accediLink.style.display = "inline";
+        eliminaBtn();
     }
 
     const path = window.location.pathname;
@@ -86,9 +90,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (loggedin === "true") {
             registraBtn.textContent = "Disconnetti";
             accediLink.style.display = "none";
+            eliminaBtn();
         } else if (loggedin === "false") {
             registraBtn.textContent = "Registra";
             accediLink.style.display = "inline";
+            eliminaBtn();
         }
 
         if (registraBtn.textContent === "Registra" && loggedin === "false") {
@@ -103,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ) {
             localStorage.setItem("loggedin", "false");
             registraBtn.textContent = "Registra";
+            eliminaBtn();
             accediLink.style.display = "inline";
         }
     });
@@ -116,4 +123,27 @@ async function hash(text) {
     return Array.from(new Uint8Array(hashBuffer))
         .map((b) => b.toString(16).padStart(2, "0"))
         .join("");
+}
+
+console.log(window.innerWidth);
+
+function eliminaBtn() {
+    const isLogged = localStorage.getItem("loggedin") === "true";
+
+    if (isLogged) {
+        if (!eliminaAccountBtn) {
+            eliminaAccountBtn = document.createElement("button");
+            eliminaAccountBtn.id = "Elimina-Btn";
+            eliminaAccountBtn.type = "button";
+            eliminaAccountBtn.classList.add("btn", "btn-secondary");
+            eliminaAccountBtn.textContent = "Elimina Account";
+
+            navUl.appendChild(eliminaAccountBtn);
+        }
+    } else {
+        if (eliminaAccountBtn) {
+            eliminaAccountBtn.remove();
+            eliminaAccountBtn = null;
+        }
+    }
 }

@@ -8,8 +8,6 @@ function loadBrands() {
     container.className = "bike-grid brands";
 
     container.innerHTML = "";
-    container.style.width = "70%";
-    container.style.height = "auto";
     currentBrand = null;
     currentCategory = null;
 
@@ -42,8 +40,6 @@ function loadCategories(b) {
 
     choose.textContent = "Scegli categoria";
     container.innerHTML = "";
-    container.style.width = "100%";
-    container.style.height = "100vh";
 
     const brand = b.dataset.brand;
     currentBrand = brand;
@@ -83,8 +79,6 @@ function loadBikes(c) {
 
     choose.textContent = "\n";
     container.innerHTML = "";
-    container.style.width = "100%";
-    container.style.height = "auto";
 
     const brand = c.dataset.brand;
     const category = c.dataset.category;

@@ -1,23 +1,64 @@
+@media only screen and (max-width: 2690px) {
+    main {
+        height: fit-content;
+    }
+
+    /* Bike Grid */
+    .bike-grid.brands {
+        width: 1350px;
+    }
+
+    .brand-card,
+    .category-card,
+    .bike-card {
+        width: 400px;
+        height: 400px;
+    }
+
+    .bike-card {
+        width: 500px;
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .bike-grid.brands {
+        width: 990px;
+    }
+
+    .bike-grid.categories {
+        display: flex;
+    }
+
+    .brand-card,
+    .category-card,
+    .bike-card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .bike-card {
+        width: 340px;
+        height: 450px;
+    }
+}
+
 @media only screen and (max-width: 1425px) {
+    .bike-grid.categories {
+        display: grid;
+    }
+
     .bike-grid.bikes {
         display: grid;
     }
 }
 @media only screen and (max-width: 1176px) {
     main {
-        height: 160vh;
-    }
-    .bike-grid.categories {
-        display: grid;
-    }
-}
-
-@media only screen and (min-width: 350px) and (max-width: 450px) {
-    main h2 {
-        font-size: 2rem;
+        height: fit-content;
     }
     /* Bike Grid */
     .bike-grid {
+        width: fit-content !important;
         gap: 15px;
     }
 
@@ -31,5 +72,15 @@
     .bike-card {
         width: 340px;
         height: 450px;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+    main {
+        height: fit-content;
+    }
+
+    main h2 {
+        font-size: 2rem;
     }
 }

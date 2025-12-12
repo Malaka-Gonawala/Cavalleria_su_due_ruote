@@ -5,6 +5,7 @@ const nameInput = document.querySelector("#nameInput");
 const emailInput = document.querySelector("#emailInput");
 const passInput1 = document.querySelector("#passInput1");
 const passInput2 = document.querySelector("#passInput2");
+const risultato = document.querySelector("#Risultato");
 
 (() => {
     "use strict";
@@ -20,6 +21,7 @@ const passInput2 = document.querySelector("#passInput2");
         inputs.forEach((input) =>
             input.classList.remove("is-valid", "is-invalid")
         );
+        risultato.textContent = "";
     });
 
     // Live validation
@@ -28,9 +30,11 @@ const passInput2 = document.querySelector("#passInput2");
             if (input.checkValidity()) {
                 input.classList.add("is-valid");
                 input.classList.remove("is-invalid");
+                risultato.textContent = "";
             } else {
                 input.classList.add("is-invalid");
                 input.classList.remove("is-valid");
+                risultato.textContent = "";
             }
         };
 
@@ -47,20 +51,44 @@ form.addEventListener("submit", async () => {
         passInput2.value !== "" &&
         passInput1.value === passInput2.value
     ) {
-        const nameFormatted =
-            nameInput.value.charAt(0).toUpperCase() +
-            nameInput.value.slice(1).toLowerCase();
-        console.log(nameFormatted);
+        // const nameFormatted =
+        //     nameInput.value.charAt(0).toUpperCase() +
+        //     nameInput.value.slice(1).toLowerCase();
+
+        const nameFormattedArr = String(nameInput.value).split(" ");
+        for (let i = 0; i < nameFormattedArr.length; i++) {
+            nameFormattedArr[i] =
+                nameFormattedArr[i].charAt(0).toUpperCase() +
+                nameFormattedArr[i].slice(1).toLowerCase();
+        }
+
+        const nameFormatted = nameFormattedArr.join(" ");
+
         const hashedPass = await hash(passInput1.value);
-        localStorage.setItem("name", nameFormatted);
-        localStorage.setItem("email", emailInput.value);
-        localStorage.setItem("password", hashedPass);
-        localStorage.setItem("loggedin", "false");
+
+        const accoutDetails = {
+            name: nameFormatted,
+            email: emailInput.value,
+            password: hashedPass,
+            loggedin: false,
+        };
+
+        let registeredAccounts =
+            JSON.parse(localStorage.getItem("registeredAccounts")) || {};
+
+        registeredAccounts[nameFormatted] = accoutDetails;
+
+        localStorage.setItem(
+            "registeredAccounts",
+            JSON.stringify(registeredAccounts)
+        );
         form.reset();
         window.location.href = "./login.html";
     } else if (passInput1.value !== passInput2.value) {
-        alert("Passwords do not match!");
+        risultato.textContent = "Le password non corrispondono.";
+        risultato.style.color = "#ff2a2a";
     } else {
-        alert("Please fill in all fields!");
+        risultato.textContent = "È necessario compilare tutti i campi!";
+        risultato.style.color = "#ff2a2a";
     }
 });
