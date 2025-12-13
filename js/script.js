@@ -29,7 +29,6 @@ let main = document.querySelector("#Main");
 let footer = document.querySelector("#Footer");
 let scrollTimeout;
 let minScrollHeight = title.scrollHeight;
-let loc = window.location.href;
 
 const fixTitle = () => {
     if (window.scrollY < minScrollHeight) {
@@ -67,9 +66,11 @@ window.addEventListener("scroll", fixTitle);
 if (localStorage.getItem("loggedin") === null) {
     localStorage.setItem("loggedin", "false");
 }
+
 let registraBtn = document.querySelector("#Registra-Btn");
 const accediLink = document.querySelector("#Accedi-Link");
 let eliminaAccountBtn = null;
+
 document.addEventListener("DOMContentLoaded", () => {
     const loggedin = localStorage.getItem("loggedin");
 
@@ -86,6 +87,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const path = window.location.pathname;
     registraBtn.addEventListener("click", () => {
         const loggedin = localStorage.getItem("loggedin");
+        const registeredAccounts = JSON.parse(
+            localStorage.getItem("registeredAccounts")
+        );
+        const loggedinAccName = localStorage.getItem("loggedinAccName");
 
         if (loggedin === "true") {
             registraBtn.textContent = "Disconnetti";
@@ -97,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
             eliminaBtn();
         }
 
+        // Reistrare o Disconnettere
         if (registraBtn.textContent === "Registra" && loggedin === "false") {
             if (path.endsWith("/") || path.endsWith("/index.html")) {
                 window.location.href = "./html/registra.html";
@@ -111,8 +117,27 @@ document.addEventListener("DOMContentLoaded", () => {
             registraBtn.textContent = "Registra";
             eliminaBtn();
             accediLink.style.display = "inline";
+            registeredAccounts[loggedinAccName].loggedin = false;
+            localStorage.setItem(
+                "registeredAccounts",
+                JSON.stringify(registeredAccounts)
+            );
+            localStorage.removeItem("loggedinAccName");
         }
     });
+
+    // Eliminare pagina
+    if (eliminaAccountBtn) {
+        eliminaAccountBtn.addEventListener("click", () => {
+            if (path.endsWith("/") || path.endsWith("/index.html")) {
+                window.location.href = "./html/elimina_acc.html";
+            } else {
+                window.location.href = "../html/elimina_acc.html";
+            }
+        });
+    } else {
+        return;
+    }
 });
 
 // async function encoding passwords

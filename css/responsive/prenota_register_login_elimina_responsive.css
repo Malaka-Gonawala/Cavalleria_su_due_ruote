@@ -1,0 +1,56 @@
+@media only screen and (max-width: 525px) {
+    #Form-Container {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .date-time {
+        display: flex;
+        flex-direction: column;
+    }
+    .btns {
+        align-items: center;
+    }
+    .btns .btn {
+        width: 180px;
+        height: 50px;
+    }
+
+    #Form input,
+    #Form select,
+    #dateInput,
+    #timeInput {
+        width: 400px;
+    }
+
+    .invalid-feedback {
+        width: 300px !important;
+    }
+
+    #Risultato,
+    #Ho-Account-Link {
+        text-align: center;
+        width: 300px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btns .btn {
+        width: 250px;
+        height: 50px;
+    }
+
+    #Form input,
+    #Form select,
+    #dateInput,
+    #timeInput {
+        width: 300px;
+    }
+}

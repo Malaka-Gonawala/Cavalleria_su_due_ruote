@@ -61,30 +61,48 @@ form.addEventListener("submit", async () => {
 
         const hashedPass = await hash(passInput1.value);
 
-        const accoutDetails = {
-            name: nameFormatted,
-            email: emailInput.value,
-            password: hashedPass,
-            loggedin: false,
-        };
-
         let registeredAccounts =
             JSON.parse(localStorage.getItem("registeredAccounts")) || {};
 
-        registeredAccounts[nameFormatted] = accoutDetails;
+        const loggedinAccName = localStorage.getItem("loggedinAccName");
 
-        localStorage.setItem(
-            "registeredAccounts",
-            JSON.stringify(registeredAccounts)
-        );
-        localStorage.setItem("loggedin", "false");
-        form.reset();
-        window.location.href = "./login.html";
-    } else if (passInput1.value !== passInput2.value) {
-        risultato.textContent = "Le password non corrispondono.";
-        risultato.style.color = "#ff2a2a";
-    } else {
-        risultato.textContent = "È necessario compilare tutti i campi!";
-        risultato.style.color = "#ff2a2a";
+        const account = registeredAccounts[loggedinAccName];
+
+        if (nameFormatted !== loggedinAccName) {
+            risultato.textContent =
+                "Il nome inserito non corrisponde all’account attuale.";
+            risultato.style.color = "#ff2a2a";
+            return;
+        } else if (
+            emailInput.value !== account.email ||
+            hashedPass !== account.password
+        ) {
+            risultato.textContent = "Email o Password non corretti.";
+            risultato.style.color = "#ff2a2a";
+            return;
+        } else {
+            risultato.textContent = "Account eliminato con successo!";
+            risultato.style.color = "#89f089";
+            delete registeredAccounts[nameFormatted];
+            for (const otherAcc in registeredAccounts) {
+                if (otherAcc !== nameFormatted) {
+                    registeredAccounts[otherAcc].loggedin = false;
+                }
+            }
+
+            // Save updated accounts
+            localStorage.setItem(
+                "registeredAccounts",
+                JSON.stringify(registeredAccounts)
+            );
+
+            localStorage.setItem("loggedin", "false");
+            localStorage.removeItem("loggedinAccName");
+
+            setTimeout(() => {
+                form.reset();
+                window.location.href = "./registra.html";
+            }, 1000);
+        }
     }
 });

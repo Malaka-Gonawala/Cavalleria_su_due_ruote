@@ -1,4 +1,3 @@
-const formContainer = document.querySelector("#Form-Container");
 const form = document.querySelector("#Form");
 const inputs = form.querySelectorAll("input");
 const nameInput = document.querySelector("#nameInput");
@@ -81,8 +80,11 @@ form.addEventListener("submit", async (e) => {
             risultato.textContent = "Login effettuato con successo!";
             risultato.style.color = "#89f089";
             loginAccount.loggedin = true;
-            registraBtn.textContent = "Disconnetti";
-            accediLink.style.display = "none";
+            for (const otherAcc in registeredAccounts) {
+                if (otherAcc !== nameFormatted) {
+                    registeredAccounts[otherAcc].loggedin = false;
+                }
+            }
 
             // Save updated accounts
             localStorage.setItem(
@@ -90,7 +92,9 @@ form.addEventListener("submit", async (e) => {
                 JSON.stringify(registeredAccounts)
             );
 
-            // Reset form and redirect after 1 second
+            localStorage.setItem("loggedin", "true");
+            localStorage.setItem("loggedinAccName", nameFormatted);
+
             setTimeout(() => {
                 form.reset();
                 window.location.href = "../index.html";
