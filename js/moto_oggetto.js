@@ -24,7 +24,7 @@ const bikeCatalog = {
                 cilindrata: "250 cc",
                 potenza: "40+ HP",
                 prezzo: "€10.000+",
-                img: "../img/foto_moto/ducati/cross/Desmo250 MX.jpg",
+                img: "../img/foto_moto/ducati/cross/Desmo450 MX.jpg",
             },
         },
         Naked: {
@@ -34,7 +34,7 @@ const bikeCatalog = {
                 cilindrata: "890 cc",
                 potenza: "120 HP",
                 prezzo: "€18.995",
-                img: "../img/foto_moto/ducati/naked/Streetfighter V2 S.jpg",
+                img: "../img/foto_moto/ducati/naked/Streetfighter V2 S.png",
             },
             bike2: {
                 id: 44,
@@ -60,7 +60,7 @@ const bikeCatalog = {
                 cilindrata: "890 cc",
                 potenza: "120 HP",
                 prezzo: "€19.120",
-                img: "../img/foto_moto/ducati/sportive/Panigale V2.jpg",
+                img: "../img/foto_moto/ducati/sportive/Panigale V2.webp",
             },
             bike2: {
                 id: 41,
@@ -68,7 +68,7 @@ const bikeCatalog = {
                 cilindrata: "V4 1.103 cc",
                 potenza: "215+ HP",
                 prezzo: "€50.000+",
-                img: "../img/foto_moto/ducati/sportive/Ducati Unica.jpg",
+                img: "../img/foto_moto/ducati/sportive/Ducati Unica.png",
             },
             bike3: {
                 id: 42,
@@ -106,7 +106,7 @@ const bikeCatalog = {
                 cilindrata: "450 cc",
                 potenza: "52.6 HP (39.2 kW)",
                 prezzo: "€9.999",
-                img: "../img/foto_moto/honda/cross/CRF 450RX Rally.png",
+                img: "../img/foto_moto/honda/cross/CRF 450RX Rally.jpeg",
             },
         },
         Naked: {
@@ -296,7 +296,7 @@ const bikeCatalog = {
                 cilindrata: "124 cc",
                 potenza: "15 HP (11 kW)",
                 prezzo: "€1.750",
-                img: "../img/foto_moto/KTM/naked/2025 KTM 125 Duke.jpg",
+                img: "../img/foto_moto/KTM/naked/2025 KTM 125 Duke.png",
             },
         },
         Sportive: {
@@ -388,7 +388,7 @@ const bikeCatalog = {
                 cilindrata: "1.340 cc",
                 potenza: "190 HP",
                 prezzo: "€18.060",
-                img: "../img/foto_moto/suzuki/sportive/HAYABUSA.jpg",
+                img: "../img/foto_moto/suzuki/sportive/HAYABUSA.png",
             },
             bike2: {
                 id: 50,

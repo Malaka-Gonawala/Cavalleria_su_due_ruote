@@ -27,7 +27,25 @@ if (bike) {
     let card = document.createElement("div");
     card.classList.add("card", "bike-focus-card");
 
-    card.innerHTML = `
+    if (bike.id === 39) {
+        card.innerHTML = `
+            <img src="${bike.img}" alt="${bike.name}" />
+            <div class="card-body">
+                <h5 class="card-title">${bike.name}</h5>
+            </div>
+            <p style='color: black; text-align:center; font-size:0.9rem;'>(foto ufficiale non disponibile, usata immagine Desmo450 MX)</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cilindrata: ${bike.cilindrata}</li>
+                <li class="list-group-item">Potenza: ${bike.potenza}</li>
+                <li class="list-group-item">Prezzo: <span class='price'>${bike.prezzo}</span></li>
+            </ul>
+            <div class="card-body">
+                <a href="./modelli.html" class="card-link">Torna A Modelli</a>
+                <a href="./prenota.html?id=${bike.id}" class="card-link">Prenota test drive</a>
+            </div>
+        `;
+    } else {
+        card.innerHTML = `
             <img src="${bike.img}" alt="${bike.name}" />
             <div class="card-body">
                 <h5 class="card-title">${bike.name}</h5>
@@ -42,6 +60,7 @@ if (bike) {
                 <a href="./prenota.html?id=${bike.id}" class="card-link">Prenota test drive</a>
             </div>
         `;
+    }
 
     container.appendChild(card);
 } else {
