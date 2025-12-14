@@ -1,0 +1,111 @@
+/* colors */
+/* Body background */
+body {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(29, 39, 52); /* main dark background */
+    color: rgb(245, 245, 245); /* primary text color */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(73, 98, 131, 0.6);
+}
+
+/* Header/Nav */
+#Title-Container {
+    background-color: rgba(73, 98, 131, 0.95); /* slightly transparent */
+}
+#Nav {
+    background-color: rgb(88, 118, 157, 0.99);
+}
+
+/* Cards */
+.card {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: rgb(255, 102, 0);
+    border-color: rgb(217, 87, 0);
+}
+.btn-primary:hover {
+    background-color: rgb(255, 154, 87);
+    border-color: rgb(228, 122, 52);
+}
+.btn-primary:active,
+.btn-primary:active:focus {
+    background-color: rgb(200, 80, 0);
+    border-color: rgb(171, 84, 26);
+    box-shadow: none;
+}
+
+.btn-secondary {
+    background-color: rgb(220, 50, 50);
+    border-color: rgb(220, 60, 50);
+    width: 200px !important;
+}
+.btn-secondary:hover {
+    background-color: rgb(220, 70, 70);
+    border-color: rgb(220, 80, 70);
+}
+.btn-secondary:active,
+.btn-secondary:active:focus {
+    background-color: rgb(180, 40, 40);
+    border-color: rgb(160, 35, 35);
+    box-shadow: none;
+}
+
+.Book-Btn {
+    background-color: rgb(255, 215, 0);
+    border-color: rgb(209, 178, 1);
+    color: black;
+    width: 250px;
+}
+.Book-Btn:hover {
+    background-color: rgb(255, 230, 64);
+    border-color: rgb(238, 212, 62);
+    color: black;
+}
+.Book-Btn:active,
+.Book-Btn:active:focus {
+    background-color: rgb(185, 158, 9);
+    border-color: rgb(142, 122, 8);
+    box-shadow: none;
+}
+
+/* Links */
+a {
+    color: rgb(112, 179, 255);
+}
+
+a:hover {
+    color: rgb(80, 200, 0);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(15, 20, 26);
+    color: rgb(245, 245, 245);
+}
+
+.footer-links:hover {
+    color: rgb(47, 143, 255);
+}
+
+#Footer-Social a:nth-child(1):hover {
+    color: #e1306c;
+}
+#Footer-Social a:nth-child(2):hover {
+    color: #1877f2;
+}
+#Footer-Social a:nth-child(3):hover {
+    color: #ff0000;
+}
+
+.link-active {
+    color: rgb(47, 143, 255);
+}

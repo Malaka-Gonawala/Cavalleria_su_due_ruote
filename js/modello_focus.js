@@ -1,16 +1,16 @@
 function findProductById(id) {
-    for (const brand in bikeCatalog) {
-        const br = bikeCatalog[brand];
-        for (const category in br) {
-            const ct = br[category];
-            for (const bike in ct) {
-                const bi = ct[bike];
-                if (bi.id === id) {
-                    return bi;
-                }
-            }
+  for (const brand in bikeCatalog) {
+    const br = bikeCatalog[brand];
+    for (const category in br) {
+      const ct = br[category];
+      for (const bike in ct) {
+        const bi = ct[bike];
+        if (bi.id === id) {
+          return bi;
         }
+      }
     }
+  }
 }
 
 const params = new URLSearchParams(window.location.search);
@@ -21,14 +21,14 @@ const container = document.querySelector(".bike-podium");
 let breadCrumbActive = document.querySelector(".active");
 
 if (bike) {
-    document.title = bike.name;
-    breadCrumbActive.textContent = bike.name;
+  document.title = bike.name;
+  breadCrumbActive.textContent = bike.name;
 
-    let card = document.createElement("div");
-    card.classList.add("card", "bike-focus-card");
+  let card = document.createElement("div");
+  card.classList.add("card", "bike-focus-card");
 
-    if (bike.id === 39) {
-        card.innerHTML = `
+  if (bike.id === 39) {
+    card.innerHTML = `
             <img src="${bike.img}" alt="${bike.name}" />
             <div class="card-body">
                 <h5 class="card-title">${bike.name}</h5>
@@ -44,8 +44,8 @@ if (bike) {
                 <a href="./prenota.html?id=${bike.id}" class="card-link">Prenota test drive</a>
             </div>
         `;
-    } else {
-        card.innerHTML = `
+  } else {
+    card.innerHTML = `
             <img src="${bike.img}" alt="${bike.name}" />
             <div class="card-body">
                 <h5 class="card-title">${bike.name}</h5>
@@ -60,9 +60,9 @@ if (bike) {
                 <a href="./prenota.html?id=${bike.id}" class="card-link">Prenota test drive</a>
             </div>
         `;
-    }
+  }
 
-    container.appendChild(card);
+  container.appendChild(card);
 } else {
-    containerp.innerHTML = "<p>Bike not found!</p>";
+  containerp.innerHTML = "<p>Bike not found!</p>";
 }

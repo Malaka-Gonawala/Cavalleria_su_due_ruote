@@ -1,7 +1,7 @@
 /* Disclaimer Modal */
 #Disclaimer-Modal-Container {
     z-index: 999;
-    background-color: rgba(30, 30, 30, 0.985);
+    background-color: rgba(37, 45, 44, 0.985);
     position: fixed;
     display: none;
     top: 0;
@@ -30,9 +30,9 @@
 }
 
 #Disclaimer-Modal h3,
-h5 {
-    color: #007bff;
+#Disclaimer-Modal h5 {
     margin-bottom: 15px;
+    color: rgb(255, 71, 71);
 }
 
 #Disclaimer-Modal p {
@@ -41,7 +41,7 @@ h5 {
 }
 
 #Disclaimer-Modal strong {
-    color: #d9534f;
+    color: rgb(79, 162, 207);
 }
 
 #Disclaimer-Modal ul {
@@ -54,8 +54,6 @@ h5 {
     display: block;
     margin: 30px auto 0 auto;
     padding: 12px 25px;
-    background-color: #007bff;
-    color: #fff;
     border: none;
     border-radius: 7px;
     font-size: 1rem;
@@ -63,10 +61,6 @@ h5 {
     transition:
         background-color 0.3s ease,
         transform 0.2s ease;
-}
-#Disclaimer-Modal #Redirect-Disclaimer:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
 }
 
 body.disclaimer-opened-body {
@@ -218,18 +212,13 @@ body.disclaimer-opened-body {
 #Modelli-Container h2 {
     margin-bottom: 15px;
 }
-#Book-Btn {
+.Book-Btn {
     display: inline-block;
     padding: 12px 30px;
-    background: #007bff;
-    color: white;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-}
-#Book-Btn:hover {
-    background: #005fcc;
 }
 
 /* Carousel */

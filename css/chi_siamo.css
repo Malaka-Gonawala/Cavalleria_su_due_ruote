@@ -60,3 +60,10 @@ main {
 .list-group-item {
     padding: 25px 0;
 }
+
+#Chi-Siamo-Container h2 {
+    color: rgb(255, 71, 71);
+}
+#Chi-Siamo-Container strong {
+    color: rgb(79, 162, 207);
+}

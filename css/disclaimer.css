@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(15, 20, 26);
+}
+
 main {
     width: 100vw;
     height: fit-content;
@@ -21,7 +25,7 @@ main {
 #Disclaimer-Page h1,
 #Disclaimer-Page h2,
 #Disclaimer-Page h3 {
-    color: #007bff;
+    color: rgb(255, 71, 71);
     margin-bottom: 15px;
 }
 
@@ -50,7 +54,7 @@ main {
 /* Important text */
 #Disclaimer-Page u,
 #Disclaimer-Page strong {
-    color: #d9534f;
+    color: rgb(79, 162, 207);
 }
 
 /* Accept Button */
@@ -58,8 +62,6 @@ main {
     display: block;
     margin: 30px auto 0 auto;
     padding: 12px 25px;
-    background-color: #007bff;
-    color: #fff;
     border: none;
     border-radius: 7px;
     font-size: 1rem;
@@ -69,9 +71,21 @@ main {
         transform 0.2s ease;
 }
 
-#Disclaimer-Page #Accept-Btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+#Accept-Btn {
+    background-color: rgb(255, 215, 0);
+    border-color: rgb(209, 178, 1);
+    color: black;
+}
+#Accept-Btn:hover {
+    background-color: rgb(255, 230, 64);
+    border-color: rgb(238, 212, 62);
+    color: black;
+}
+#Accept-Btn:active,
+#Accept-Btn:active:focus {
+    background-color: rgb(185, 158, 9);
+    border-color: rgb(142, 122, 8);
+    box-shadow: none;
 }
 
 /* Responsive */

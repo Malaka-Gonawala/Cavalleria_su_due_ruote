@@ -6,10 +6,6 @@ main {
     align-items: center;
 }
 
-#Breadcrumb-Nav {
-    margin: 20px;
-}
-
 /* Bike Grid */
 .bike-grid {
     height: fit-content;
@@ -18,6 +14,25 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.back-btn {
+    width: fit-content !important;
+    background-color: #4f647a; /* normal (lighter than active) */
+    border-color: #4f647a;
+}
+
+/* Hover → even lighter */
+.back-btn:hover {
+    background-color: #6a8096;
+    border-color: #6a8096;
+}
+
+/* Active → darkest (your base color) */
+.back-btn:active,
+.back-btn:active:focus {
+    background-color: #384b5d;
+    border-color: #384b5d;
 }
 
 .brand-card,

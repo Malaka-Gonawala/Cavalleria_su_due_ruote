@@ -47,7 +47,7 @@ function loadCategories(b) {
 
     const backBtn = document.createElement("button");
     backBtn.textContent = "← Back to Brands";
-    backBtn.classList.add("btn", "btn-secondary");
+    backBtn.classList.add("btn", "btn-secondary", "back-btn");
     backBtn.addEventListener("click", loadBrands);
     container.appendChild(backBtn);
 
@@ -87,7 +87,7 @@ function loadBikes(c) {
 
     const backBtn = document.createElement("button");
     backBtn.textContent = "← Back to Categories";
-    backBtn.classList.add("btn", "btn-secondary");
+    backBtn.classList.add("btn", "btn-secondary", "back-btn");
     backBtn.addEventListener("click", () => {
         loadCategories({ dataset: { brand } });
     });
