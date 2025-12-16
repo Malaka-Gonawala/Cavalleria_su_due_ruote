@@ -134,6 +134,8 @@ nav .btn {
 
 #Elimina-Btn {
     width: 200px !important;
+    display: grid;
+    align-self: flex-end;
 }
 
 /* Bread crumbs*/

@@ -1,158 +1,162 @@
-@media only screen and (max-width: 2690px) {
-  html {
-    font-size: 25px;
-  }
+@media only screen and (min-width: 1912px) {
+    html {
+        font-size: 25px;
+    }
 
-  #Nav {
-    width: 650px;
-  }
-  #OpenNav.active {
-    margin-right: 220px;
-  }
+    #Nav {
+        width: 650px;
+    }
+    #OpenNav.active {
+        margin-right: 220px;
+    }
 
-  nav .btn {
-    width: 320px;
-  }
+    nav .btn {
+        width: 320px;
+    }
+
+    #Elimina-Btn {
+        width: 230px !important;
+    }
 }
 @media only screen and (max-width: 1912px) {
-  html {
-    font-size: 22px;
-  }
+    html {
+        font-size: 22px;
+    }
 
-  #Nav {
-    width: 550px;
-  }
-  #OpenNav.active {
-    margin-right: 250px;
-  }
+    #Nav {
+        width: 550px;
+    }
+    #OpenNav.active {
+        margin-right: 250px;
+    }
 
-  nav .btn {
-    width: 270px;
-  }
+    nav .btn {
+        width: 270px;
+    }
 }
 
 @media only screen and (max-width: 1740px) {
-  html {
-    font-size: 20px;
-  }
+    html {
+        font-size: 20px;
+    }
 
-  /* Nav */
-  #Title {
-    width: 500px;
-  }
-  #Title h3 {
-    font-size: 1.3rem;
-  }
-  #Logo {
-    width: 12%;
-  }
-  #Nav {
-    width: 450px;
-  }
-  #OpenNav.active {
-    margin-right: 300px;
-  }
-  nav ul {
-    padding-left: 27px;
-  }
-  nav .btn {
-    width: 270px;
-  }
+    /* Nav */
+    #Title {
+        width: 400px;
+    }
+    #Title h3 {
+        font-size: 1.3rem;
+    }
+    #Logo {
+        width: 12%;
+    }
+    #Nav {
+        width: 450px;
+    }
+    #OpenNav.active {
+        margin-right: 300px;
+    }
+    nav ul {
+        padding-left: 27px;
+    }
+    nav .btn {
+        width: 270px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-  html {
-    font-size: 18px;
-  }
+    html {
+        font-size: 18px;
+    }
 
-  /* Nav */
-  #Title {
-    width: 320px;
-  }
-  #Title h3 {
-    font-size: 1.1rem;
-  }
-  #Logo {
-    width: 20%;
-  }
-  #Nav {
-    width: 400px;
-  }
-  #OpenNav.active {
-    margin-right: 295px;
-  }
-  nav ul {
-    padding-left: 30px;
-  }
-  nav .btn {
-    width: 230px;
-  }
+    /* Nav */
+    #Title {
+        width: 320px;
+    }
+    #Title h3 {
+        font-size: 1.1rem;
+    }
+    #Logo {
+        width: 20%;
+    }
+    #Nav {
+        width: 400px;
+    }
+    #OpenNav.active {
+        margin-right: 295px;
+    }
+    nav ul {
+        padding-left: 30px;
+    }
+    nav .btn {
+        width: 230px;
+    }
 }
 
 @media only screen and (max-width: 630px) {
-  /* Nav */
-  #Title {
-    width: 70px;
-  }
-  #Title h3 {
-    display: none;
-  }
-  #Logo {
-    width: 100%;
-  }
-  #Nav {
-    width: 370px;
-  }
-  #OpenNav.active {
-    margin-right: 260px;
-  }
-  nav ul {
-    padding-left: 25px;
-  }
+    /* Nav */
+    #Title {
+        width: 70px;
+    }
+    #Title h3 {
+        display: none;
+    }
+    #Logo {
+        width: 100%;
+    }
+    #Nav {
+        width: 370px;
+    }
+    #OpenNav.active {
+        margin-right: 260px;
+    }
+    nav ul {
+        padding-left: 25px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 
-  /* Nav */
-  #Nav {
-    width: 320px;
-  }
-  #OpenNav.active {
-    margin-right: 235px;
-  }
-  nav ul {
-    padding-left: 20px;
-  }
-  nav .btn {
-    width: 200px;
-  }
+    /* Nav */
+    #Nav {
+        width: 320px;
+    }
+    #OpenNav.active {
+        margin-right: 235px;
+    }
+    nav ul {
+        padding-left: 20px;
+    }
+    nav .btn {
+        width: 200px;
+    }
 
-  /* Bread crumbs */
-  .breadcrumb {
-    padding-top: 0;
-    font-size: 1.2rem;
-  }
+    /* Bread crumbs */
+    .breadcrumb {
+        padding-top: 0;
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 350px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 
-  /* Nav */
-  #Nav {
-    width: 275px;
-  }
-  nav ul {
-    padding-left: 15px;
-  }
-  nav .btn {
-    width: 175px;
-  }
-  #OpenNav.active {
-    margin-right: 210px;
-  }
+    /* Nav */
+    #Nav {
+        width: 275px;
+    }
+    nav ul {
+        padding-left: 15px;
+    }
+    nav .btn {
+        width: 175px;
+    }
+    #OpenNav.active {
+        margin-right: 210px;
+    }
 }
