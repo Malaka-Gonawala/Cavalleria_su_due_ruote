@@ -162,20 +162,25 @@ form.addEventListener("submit", () => {
                 continue;
             }
         }
-        for (const raccount in registeredAccounts) {
-            ra = registeredAccounts[raccount];
-            if (
-                nameFormatted === raccount &&
-                nameFormatted !== loggedinAccName
-            ) {
-                window.location.href = "./login.html";
-                return;
-            } else if (
-                nameFormatted !== raccount &&
-                nameFormatted !== loggedinAccName
-            ) {
-                window.location.href = "./registra.html";
+
+        if (registeredAccounts !== null) {
+            for (const raccount in registeredAccounts) {
+                ra = registeredAccounts[raccount];
+                if (
+                    nameFormatted === raccount &&
+                    nameFormatted !== loggedinAccName
+                ) {
+                    window.location.href = "./login.html";
+                    return;
+                } else if (
+                    nameFormatted !== raccount &&
+                    loggedinAccName === null
+                ) {
+                    window.location.href = "./registra.html";
+                }
             }
+        } else if (registeredAccounts === null && loggedinAccName === null) {
+            window.location.href = "./registra.html";
         }
     } else {
         risultato.textContent = "È necessario compilare tutti i campi!";
