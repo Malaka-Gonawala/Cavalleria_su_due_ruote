@@ -39,18 +39,14 @@ Il sito presenta in modo chiaro e intuitivo diversi modelli di motociclette, con
 Progetto realizzato da studenti dell’indirizzo informatico:
 
 - Malaka — Front-End Developer  
-- Stefano — Cercatore di immagini  
-- Nour — Ricercatore di informazioni 1  
-- Emanuele — Ricercatore di informazioni 2  
 
-*(I nomi e le immagini sono utilizzati con consenso e senza informazioni sensibili.)*
 
 ---
 
 ## 🚀 Come usare il progetto
 
 1. Clona il repository:
-git clone [https://github.com/tuo-username/cavalleria-su-due-ruote.git](https://github.com/Malaka-Gonawala/Cavaleria_su_due_ruote.git)
+git clone [https://github.com/tuo-username/cavalleria-su-due-ruote.git](https://github.com/Malaka-Gonawala/Cavalleria_su_due_ruote.git)
 
 2. Apri index.html in un browser per visualizzare il sito.
 
