@@ -7,7 +7,7 @@
 [![Ionicons](https://img.shields.io/badge/Ionicons-4BC0C0?style=for-the-badge&logo=ionicons&logoColor=white)](https://ionicons.com/)
 
 **Cavalleria su Due Ruote** è un sito web realizzato come **progetto scolastico** per l’indirizzo informatico.  
-Il sito presenta in modo chiaro e intuitivo diversi modelli di motociclette, con pagine dedicate ai modelli, alla prenotazione di un test drive (simulata) e alla presentazione del team.
+Il sito presenta in modo chiaro e intuitivo diversi modelli di motociclette, con pagine dedicate ai modelli, alla prenotazione di un test drive (simulata)
 
 > ⚠️ **Disclaimer:** Questo sito è a scopo educativo e informativo. Non rappresenta un vero servizio commerciale. Tutti i contenuti, immagini e contatti sono in parte fittizi.
 
@@ -17,7 +17,6 @@ Il sito presenta in modo chiaro e intuitivo diversi modelli di motociclette, con
 
 - **Home Page:** Banner/carousel, sezioni informative e CTA.  
 - **Pagina Modelli:** Griglia di moto con filtri lato front-end (JavaScript).  
-- **Chi Siamo:** Presentazione del team con ruoli e immagini (con consenso).  
 - **Prenota Test Drive:** Modulo simulato di prenotazione.  
 - **Navbar reattiva** con icone Ionicons.  
 - **Layout responsive** per desktop e mobile.
